@@ -1,0 +1,12 @@
+@import "_mixins.scss";
+
+$font--wght: "/fnt/Manrope-VariableFont_wght";
+$font--regular: "/fnt/SFMono-Regular";
+$font--sbold: "/fnt/SFMono-Semibold";
+
+@include font-face(fPage, $font--wght, normal, null, ttf);
+
+
+body {
+    font-family: "fPage";
+}

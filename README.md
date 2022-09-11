@@ -1,2 +1,1 @@
-# dainb
-front-end pr0ject
+1. sass --watch scss:css

@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "fPage";
+  font-weight: normal;
+  src: url("/fnt/Manrope-VariableFont_wght.ttf") format("truetype");
+}
+body {
+  font-family: "fPage";
+}
+
+/*# sourceMappingURL=style.css.map */
