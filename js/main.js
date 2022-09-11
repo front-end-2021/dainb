@@ -25,7 +25,7 @@ $.get('html/app.html').done(template => {
             }
         },
         updated() {
-            console.log('RoadmapApp updated DOM');
+            console.log('dnbApp updated DOM');
 
         },
         methods: {

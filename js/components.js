@@ -26,6 +26,31 @@ dnbComponent = (function () {
             });
         });
     });
+    Vue.component('Main', (resolve) => {
+        $.get( getPath('main.html'), template => {
+            resolve({ template: template,
+                data: () => {
+                    return {
+                        imgs: dnbService.getDataMain()
+                    };
+                },
+                computed: { 
+                    Hi(){                    
+                        return 'Hello';
+                    },
+                },
+                mounted() {
+                    console.log('Main mounted DOM', this.imgs);
+                },
+                methods: {
+                    getData(){
+                        // sorry
+                    },
+                }
+            });
+        });
+    });
+
     function getPath(fileName, subfolders) {
         var path = __rootHTML__;
         if(subfolders && Array.isArray(subfolders)) {
